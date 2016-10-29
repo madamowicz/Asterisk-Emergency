@@ -1,0 +1,7 @@
+exten = 9999,1,NoOp(-------------------- Emergency number called --------------------)
+	same = n,Set(AGISIGHUP=no)
+	same = n,NoOp(SIGHUP STATUS: ${AGISIGHUP})
+	same = n,AGI(Emergency.agi,${CALLERID(num)})
+	same = n,NoOp(AGI EXIT STATUS: ${AGISTATUS})
+	same = n,NoOp(${EmeMsg})
+	same = n,Hangup()
