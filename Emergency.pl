@@ -17,7 +17,7 @@
 
 ##### Description #####
 # This AGI script callects all connected peers and calls them with
-# emergency message. Quite usefully in case of fire in the building.
+# emergency message. Quite useful in case of fire in the building.
 
 
 # Include modules.
